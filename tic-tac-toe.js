@@ -1,24 +1,26 @@
 var initBoard = [[null,null,null],[null,null,null],[null,null,null]];
     initState = {board: initBoard, previousWho: null};
     updatedState = {board: initState.board, previousWho: 'X'};
-//     // box1 = [0,0];
-//     // box2 = [1,0];
-//     // box3 = [2,0];
-//     // box4 = [0,1];
-//     // box5 = [1,1];
-//     // box6 = [2,1];
-//     // box7 = [0,2];
-//     // box8 = [1,2];
-//     // box9 = [2,2];
+    box1 = updatedState.board[0][0];
+    box2 = updatedState.board[0][1];
+    box3 = updatedState.board[0][2];
+    box4 = updatedState.board[1][0];
+    box5 = updatedState.board[1][1];
+    box6 = updatedState.board[1][2];
+    box7 = updatedState.board[2][0];
+    box8 = updatedState.board[2][1];
+    box9 = updatedState.board[2][2];
+
+console.log(box2);
 
 function copyBoard(board){
   var newBoard = [];
-  
+
 }
 
 function place(updatedState, m, n){
   var newBoard;
-  var newPreviousWho = ..;
+  // var newPreviousWho = ..;
   var newState = {board: newBoard, previousWho: newPreviousWho};
   return newState;
   // if(state.previousWho === null){
@@ -115,7 +117,7 @@ function click(updatedState, i,j){
 
 
 var html = render(initState);
-document.querySelector("#board").innerHTML = html;
+//document.querySelector("#board").innerHTML = html;
 
 
 //
